@@ -22,7 +22,7 @@ class Stack {
         return $this->top + 1;
     }
 
-    public function top()
+    public function top(): mixed
     {
         if($this->top == -1){
             return false;
@@ -41,7 +41,7 @@ class Stack {
         return true;
     }
 
-    public function pop()
+    public function pop(): mixed
     {
         if($this->top == -1) {
             return false;
